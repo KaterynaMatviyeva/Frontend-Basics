@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fontend basics</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .my-gradient {
+        background-image: linear-gradient(
+            112.5deg,
+            rgb(214, 214, 214) 0%,
+            rgb(214, 214, 214) 10%,
+            rgb(195, 195, 195) 10%,
+            rgb(195, 195, 195) 53%,
+            rgb(176, 176, 176) 53%,
+            rgb(176, 176, 176) 55%,
+            rgb(157, 157, 157) 55%,
+            rgb(157, 157, 157) 60%,
+            rgb(137, 137, 137) 60%,
+            rgb(137, 137, 137) 88%,
+            rgb(118, 118, 118) 88%,
+            rgb(118, 118, 118) 91%,
+            rgb(99, 99, 99) 91%,
+            rgb(99, 99, 99) 100%
+          ),
+          linear-gradient(
+            157.5deg,
+            rgb(214, 214, 214) 0%,
+            rgb(214, 214, 214) 10%,
+            rgb(195, 195, 195) 10%,
+            rgb(195, 195, 195) 53%,
+            rgb(176, 176, 176) 53%,
+            rgb(176, 176, 176) 55%,
+            rgb(157, 157, 157) 55%,
+            rgb(157, 157, 157) 60%,
+            rgb(137, 137, 137) 60%,
+            rgb(137, 137, 137) 88%,
+            rgb(118, 118, 118) 88%,
+            rgb(118, 118, 118) 91%,
+            rgb(99, 99, 99) 91%,
+            rgb(99, 99, 99) 100%
+          ),
+          linear-gradient(
+            135deg,
+            rgb(214, 214, 214) 0%,
+            rgb(214, 214, 214) 10%,
+            rgb(195, 195, 195) 10%,
+            rgb(195, 195, 195) 53%,
+            rgb(176, 176, 176) 53%,
+            rgb(176, 176, 176) 55%,
+            rgb(157, 157, 157) 55%,
+            rgb(157, 157, 157) 60%,
+            rgb(137, 137, 137) 60%,
+            rgb(137, 137, 137) 88%,
+            rgb(118, 118, 118) 88%,
+            rgb(118, 118, 118) 91%,
+            rgb(99, 99, 99) 91%,
+            rgb(99, 99, 99) 100%
+          ),
+          linear-gradient(90deg, rgb(195, 195, 195), rgb(228, 228, 228));
+        background-blend-mode: overlay, overlay, overlay, normal;
+      }
+      .input {
+        border: solid 1px black;
+        font-style: oblique;
+        width: 200px;
+        padding: 10px;
+        font-family: "Lucida Grande", sans-serif"
+      }
+      .checkbox-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            justify-content: center;
+
+        }
+        .checkbox-container label {
+            margin-left: 8px;
+            font-size: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="my-gradient" style="width: 100%; height: 100vh">
+      <h1 style="text-align-last: center">
+        Registrati e ascolta la tua musica preferita ora!
+      </h1>
+      <form onsubmit="alert('Form inviato con successo!')">
+        <div style="margin-bottom: 10px">
+          <input class="input" type="text" placeholder="Nome" />
+          <input class="input" type="text" placeholder="Cognome" />
+          <input class="input" type="date" placeholder="Data di nascita" />
+        </div>
+        <div>
+          <input class="input" type="email" placeholder="Email" />
+          <input class="input" type="password" placeholder="Password" />
+          <input class="input" type="number" placeholder="Numero di telefono" />
+        </div>
+        <div>
+          <h2 style="text-align-last: center">
+            Scegli la musica che preferisci
+          </h2>
+          <div class="checkbox-container">
+            <label for="musica1">Rock</label>
+            <input type="checkbox" id="musica1" name="musica" value="rock" />
+
+            <label for="musica2">Jazz</label>
+            <input type="checkbox" id="musica2" name="musica" value="jazz" />
+
+            <label for="musica3">Techno</label>
+            <input type="checkbox" id="musica3" name="musica" value="Techno" />
+
+            <label for="musica4">Reggaeton</label>
+            <input
+              type="checkbox"
+              id="musica4"
+              name="musica"
+              value="Reggaeton"
+            />
+
+            <label for="musica5">Disco-music</label>
+            <input
+              type="checkbox"
+              id="musica5"
+              name="musica"
+              value="Disco-music"
+            />
+
+            <label for="musica6">Dance</label>
+            <input type="checkbox" id="musica6" name="musica" value="Dance" />
+          </div>
+        </div>
+
+        <div style="display: flex">
+          <button
+            type="submit"
+            style="
+              margin-left: auto;
+              padding: 10px 20px;
+              font-size: 16px;
+              border: 2px solid darkgreen;
+              border-radius: 25px;
+              background-color: darkgreen;
+              color: white;
+              cursor: pointer;
+              transition: background-color 0.3s, border-color 0.3s;
+            "
+          >
+            Registrati
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
